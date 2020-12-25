@@ -16,7 +16,6 @@ emp1.displayEmployee()
 emp2.displayEmployee()
 print("total employee",employee.empCount)
 print(employee.__doc__)
-print("hello")
 
 # 2
 class vector:
