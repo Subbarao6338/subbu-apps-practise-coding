@@ -42,9 +42,19 @@ t=int(input("no of terms:"))
 r=[n**x for x in range(t)]
 print("total terms are:",t)
 print(r)
-'''
 
 # factors of number
 n=int(input("enter number:"))
 f=[i for i in range(1,n+1) if (n%i==0)]
 print(f)
+'''
+
+# decimal to binary
+n=int(input("decimal no:"))
+t=n
+b=""
+while t>0:
+    d=t%2
+    b=str(d)+b
+    t//=2
+print(b)
