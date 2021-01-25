@@ -194,3 +194,25 @@ for i in range(n):
         # nCr = n!/((n-r)!*r!)
         print(factorial(i)//(factorial(j)*factorial(i-j)), end=" ")
     print()
+#22
+for i in range(n,0,-1):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print("\r")
+#23 binary
+k=2*n-2
+for i in range(0,n):
+    for j in range(0,k):
+        print(end=" ")
+    k=k-1
+    for j in range(0,i+1):
+        print("10",end=" ")
+    print("\r")
+#24
+x=65
+for i in range(0,n):
+    ch=chr(x)
+    x+=1
+    for j in range(0,i+1):
+        print(ch,end=" ")
+    print("\r")
