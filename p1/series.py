@@ -1,4 +1,14 @@
-'''# fibonacci
+# fibonacci
+n=int(input("n:"))
+a=0
+b=1
+print(a,b)
+for j in range(0,n):
+    c=a+b
+    print(c,end=" ")
+    a=b
+    b=c
+'''
 # 1.check
 import math
 def perfectsquare(x):
@@ -19,7 +29,7 @@ l=int(input("lower range:"))
 u=int(input("upper range:"))
 for f in range(l,u+1):
     print(fib(f))
-'''
+
 # armstrong number
 #range
 l = int(input("lower range"))
@@ -39,4 +49,4 @@ for n in range(l, u + 1):
         t//=10
     if n==s:
         print(n,end=" ")
-
+'''

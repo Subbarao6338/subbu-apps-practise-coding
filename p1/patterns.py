@@ -216,3 +216,183 @@ for i in range(0,n):
     for j in range(0,i+1):
         print(ch,end=" ")
     print("\r")
+#25
+c = 65
+ch = chr(c)
+k = 1
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(j%2==0):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#26
+c = 65
+ch = chr(c)
+k = 1
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(j%2==1):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#27
+c = 65
+ch = chr(c)
+k = 1
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(i%2==0):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#28
+c = 65
+ch = chr(c)
+k = 1
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(i%2==1):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#29
+c = 65
+ch = chr(c)
+k = 1
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(j%2==0):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+    k+=1
+    print("\r")
+#30
+c = 65
+ch = chr(c)
+k = 1
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(j%2==1):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+    k+=1
+    print("\r")
+#31
+for i in range(0,n):
+    c = 65
+    ch = chr(c)
+    k = 1
+    for j in range(0,i+1):
+        if(j%2==0):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#32
+for i in range(0,n):
+    c = 65
+    ch = chr(c)
+    k = 1
+    for j in range(0,i+1):
+        if(j%2==1):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#33
+for i in range(0,n):
+    c = 97
+    ch = chr(c)
+    k = 1
+    for j in range(0,i+1):
+        if(j%2==0):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#34
+for i in range(0,n):
+    c = 97
+    ch = chr(c)
+    k = 1
+    for j in range(0,i+1):
+        if(j%2==1):
+            print(ch,end=" ")
+            c+=1
+            ch = chr(c)
+        else:
+            print(k,end=" ")
+            k+=1
+    print("\r")
+#35
+k=100
+c1='$'
+c2='%'
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(j%2==0):
+            print(str(k)+c1,end=" ")
+        else:
+            print(str(k)+c2,end=" ")
+        k+=100
+    print("\r")
+#36
+k=100
+c1='$'
+c2='%'
+for i in range(0,n):
+    for j in range(0,i+1):
+        if(j%2==1):
+            print(str(k)+c1,end=" ")
+        else:
+            print(str(k)+c2,end=" ")
+        k+=100
+    print("\r")
+#37 fibonacci
+a=0
+b=1
+for i in range(0,n):
+    if i==0:
+        print(a)
+    elif i==1:
+        print(a,b)
+    else:
+        for j in range(0,i+1):
+            c=a+b
+            print(c,end=" ")
+            a=b
+            b=c
+        print("\r")
+#38
