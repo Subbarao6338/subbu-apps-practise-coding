@@ -1,9 +1,18 @@
-# palindrome
+'''# palindrome
 s1=str(input("enter string:"))
 s2=s1.casefold()
 print(s1)
 
 v=['a','e','i','o','u','A','E','I','O','U']
+
+st=str(input("string:"))
+s=st.casefold()
+s1=list(c for c in s)
+s2=""
+for i in range(len(s1)):
+    if(s1[i]!='a' and s1[i]!='e' and s1[i]!='i' and s1[i]!='o' and s1[i]!='u'):
+        s2=s2+s1[i]
+print(s2)
 
 # count vowels
 cv={}.fromkeys(v,0)
@@ -33,7 +42,7 @@ for i in range(0,len(l2)):
         if(l2[j]==l2[i]):
             c1+=1
     print("frequency ",l2[i],':',c1)
-'''
+
 rs=reversed(s1)
 if(list(s1)==list(rs)):
     print("palindrome")
@@ -74,4 +83,10 @@ print(s1)
 # convert string to list
 li=list(s1)
 print(li)
+
+#split and join
+s1=str(input("strting:"))
+s=s1.split(" ")
+j="-".join(s)
+print(s,j)
 '''

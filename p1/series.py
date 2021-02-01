@@ -1,4 +1,4 @@
-# fibonacci
+'''# fibonacci
 #n th term
 n=int(input("n:"))
 def fibonacci(n):
@@ -40,8 +40,6 @@ def fib(i):
     s2=perfectsquare(5*i*i-4)
     if (s1 or s2):
         print(i,"is fib num")
-    else:
-        print(i,"is not fib num")
 n=int(input("enter number:"))
 print(fib(n))
 #range
@@ -70,3 +68,16 @@ for n in range(l, u + 1):
     if n==s:
         print(n,end=" ")
 '''
+#palindrome
+l=int(input("l:"))
+u=int(input("u:"))
+
+for t in range(l,u+1):
+    c=0
+    i=t
+    while(t>0):
+        d=t%10
+        c=d+(c*10)
+        t=int(t/10)
+    if(i==c):
+        print(i,end=" ")

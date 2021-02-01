@@ -1,3 +1,4 @@
+'''
 n=int(input("pattern lines:"))
 #1
 for i in range(n):
@@ -396,3 +397,92 @@ for i in range(0,n):
             b=c
         print("\r")
 #38
+k=2*n-2
+x=65
+for i in range(0,n):
+    for j in range(0,k):
+        print(end=" ")
+    k=k-1
+    for j in range(0,i+1):
+        ch=chr(x)
+        print(ch,end=" ")
+        x+=1
+    print("\r")
+#39
+for i in range(n):
+    for j in range(n):
+        if(j==0 or i-j==2 or i+j==2):
+            print("*",end=" ")
+        else:
+            print(end=" ")
+    print()
+#40
+k=2*n-2
+x=65
+for i in range(0,n):
+    ch=chr(x)
+    x+=1
+    for j in range(0,k):
+        print(end=" ")
+    k=k-1
+    for j in range(0,i+1):
+        print(ch,end=" ")
+    print("\r")
+#41
+k=2*n-2
+for i in range(0,n):
+    for j in range(0,k):
+        print(end=" ")
+    k=k-1
+    x=65
+    for j in range(0,i+1):
+        ch=chr(x)
+        print(ch,end=" ")
+        x+=1
+    print("\r")
+#42
+k=n-2
+x=65
+for i in range(n,-1,-1):
+    for j in range(k,0,-1):
+        print(end=" ")
+    k=k+1
+    for j in range(0,i+1):
+        ch=chr(x)
+        print(ch,end=" ")
+        x+=1
+    print("\r")
+#43
+k=2*n-3
+c=100
+for i in range(0,n):
+    for j in range(k,n-k+6):
+        print(end=" ")
+    k=k-2
+    for j in range(i,n):
+        print(c,end=" ")
+        c+=100
+    print("\r")
+#44
+k=2*n-2
+c=1
+for i in range(0,n):
+    for j in range(0,k):
+        print(end=" ")
+    k=k-2
+    for j in range(0,i+1):
+        print(c,end=" ")
+        c+=1
+    print("\r")
+#45
+k=2*n-2
+c=1
+for i in range(0,n):
+    for j in range(0,i):
+        print(end=" ")
+    for j in range(i,n):
+        print(c,end=" ")
+        c+=1
+    print("\r")
+
+'''

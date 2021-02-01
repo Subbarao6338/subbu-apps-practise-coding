@@ -47,7 +47,57 @@ print(r)
 n=int(input("enter number:"))
 f=[i for i in range(1,n+1) if (n%i==0)]
 print(f)
-'''
+
+#prime number
+n=int(input("n:"))
+l=[]
+for i in range(2,n):
+    c=0
+    for j in range(2,i):
+        if(i%j==0):
+            c+=1
+    if(c==0):
+        l.append(i)
+print(l)
+for i in range(0,len(l),2):
+    print(l[i],end=" ")
+
+#decimal to binary
+n=int(input("n:"))
+l=[]
+while(n!=0):
+    d=n%2
+    l.append(d)
+    n=int(n/2)
+print(l)
+print(l[::-1])
+l1=l[::-1]
+for i in range(len(l1)):
+    print(l1[i],end="")
+
+#decimal to hexa
+n=int(input("n:"))
+l=[]
+while(n!=0):
+    d=n%16
+    l.append(d)
+    n=int(n/16)
+print(l)
+print(l[::-1])
+l1=l[::-1]
+for i in range(len(l1)):
+    print(l1[i],end=" ")
+
+# binary to decimal
+n=int(input("n:"))
+s=0
+c=0
+while(n!=0):
+    d=n%10
+    s=s+d*(2**c)
+    n=int(n/10)
+    c+=1
+print(s)
 
 # decimal to binary
 n=int(input("decimal no:"))
@@ -58,3 +108,4 @@ while t>0:
     b=str(d)+b
     t//=2
 print(b)
+'''
