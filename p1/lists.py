@@ -1,4 +1,4 @@
-
+'''
 # add elemnts to array
 l=[]
 s=int(input("size:"))
@@ -7,7 +7,7 @@ for n in range(s):
     ele=int(input())
     l.append(ele)
 print(l)
-'''
+
 print(min(l))
 print(max(l))
 print(sum(l))
@@ -66,4 +66,13 @@ print(l[::-1])
 # even and odd elements
 [print("odd",l[i]) for i in range(0,s,2)]
 [print("even",l[i]) for i in range(1,s,2)]
+
+r=[v+10 for v in l]
+print(r)
+net=[v+(v*0.2)-(v*0.1) for v in l]
+print(net)
 '''
+a=[10,20,30,45,23,90,56]
+b=[i for i in a if i>=30]
+print(b)
+c=[25,35,45,55,75,85,95]
