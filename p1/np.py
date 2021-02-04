@@ -1,6 +1,9 @@
 import numpy as np
+
+'''
 a=np.array([1,2,3,4,5])
 print("a",a)
+
 # copy and view
 c=a.copy()
 v=a.view()
@@ -30,7 +33,7 @@ b=a.reshape(-1)
 print(b)
 
 # iter
-'''l=[]
+l=[]
 s=int(input("size:"))
 print("array elements:")
 for n in range(s):
@@ -45,7 +48,7 @@ for i in np.nditer(x[::2]):
     print(i,end=" ")
 for i,j in np.ndenumerate(x):
     print(i,j)
-'''
+
 # concatenate
 a1=np.array([[1,2,3],[7,8,9]])
 a2=np.array([[4,5,6],[10,11,12]])
@@ -74,3 +77,55 @@ x4=np.searchsorted(a,5)
 print(x4)
 x5=np.searchsorted(a,[2,4,5])
 print(x5)
+
+# random
+x1=np.random.randint(100,size=(3,5))
+x2=np.random.rand(5)
+x3=np.random.choice(a)
+x4=np.random.shuffle(a)
+x5=np.random.permutation(a)
+print(x1,x2,x3)
+print(a,x4)
+print(a,x5)
+
+print(a.max())
+print(a.min())
+print(a.sum())
+print(a.itemsize)
+print(np.sqrt(a))
+print(np.std(a))
+print(np.sin(a))
+print(np.cos(a))
+print(np.log(a))
+print(np.exp(a))
+print(np.zeros(3))
+print(np.ones(2))
+print(np.eye(3))
+'''
+
+# remove duplicates
+l = []
+s = int(input("size:"))
+print("array elements:")
+for n in range(s):
+    ele = int(input())
+    l.append(ele)
+print(l)
+r = np.array(l)
+print(r)
+h = []
+
+for i in r:
+    if i not in h:
+        h.append(i)
+print (np.array(h))
+# count
+f = {}
+for i in r:
+    if (i in f):
+        f[i] += 1
+    else:
+        f[i] = 1
+
+for k, v in f.items():
+    print (k,":", v)
