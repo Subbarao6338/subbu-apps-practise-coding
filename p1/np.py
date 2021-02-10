@@ -103,7 +103,6 @@ print(np.ones(2))
 print(np.eye(3))
 '''
 
-# remove duplicates
 l = []
 s = int(input("size:"))
 print("array elements:")
@@ -113,19 +112,19 @@ for n in range(s):
 print(l)
 r = np.array(l)
 print(r)
+# remove duplicates
 h = []
-
 for i in r:
     if i not in h:
         h.append(i)
 print (np.array(h))
+
 # count
 f = {}
 for i in r:
-    if (i in f):
+    if i in f:
         f[i] += 1
     else:
         f[i] = 1
-
 for k, v in f.items():
-    print (k,":", v)
+    print(k,":", v)
